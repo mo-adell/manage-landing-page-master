@@ -1,0 +1,32 @@
+//Colors
+
+:root {
+  --bright-red: hsl(12, 88%, 59%);
+  --dark-blue: hsl(228, 39%, 23%);
+
+  --dark-grayish-blue: hsl(227, 12%, 61%);
+  --very-dark-blue: hsl(233, 12%, 13%);
+  --very-pale-red: hsl(13, 100%, 96%);
+  --very-light-gray: hsl(0, 0%, 98%);
+
+  --font-family-be-vietnam: 'Be Vietnam', sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+}
+
+//Maps
+$breakpoints: (
+  // 400px
+  xs: 25em,
+  // 544px
+  ms: 34em,
+  // 768px
+  md: 48em,
+  // 960px
+  lg: 60em,
+  // 1280px
+  xl: 80em,
+  // 1440px
+  xxl: 90em
+);

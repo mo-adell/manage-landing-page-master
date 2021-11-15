@@ -1,0 +1,12 @@
+@use '../sass-utils/all' as *;
+
+html {
+  font-size: 16px;
+}
+body {
+  font-family: var(--font-family-be-vietnam);
+}
+
+p {
+  font-weight: var(--font-weight-regular);
+}
