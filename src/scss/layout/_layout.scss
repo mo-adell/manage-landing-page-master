@@ -1,6 +1,28 @@
-body {
-	display: grid;
-	grid-template-columns: 10% 1fr 10%;
-	grid-template-areas: ". main .";
+@use '../sass-utils/all' as *;
+
+.layout {
+  display: grid;
+  grid-template-columns: var(--padding-layout-mobile) 1fr var(--padding-layout-mobile);
+  grid-template-rows: 10rem 1fr auto;
+  row-gap: 5rem;
+  grid-template-areas:
+    '. header   .'
+    '. content  .'
+    '. footer   .';
+
+  @include query(md) {
+    grid-template-columns: var(--padding-layout-tablet) 1fr var(--padding-layout-tablet);
+  }
 }
 
+.header {
+  grid-area: header;
+}
+
+.content {
+  grid-area: content;
+}
+
+.footer {
+  grid-area: footer;
+}

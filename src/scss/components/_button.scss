@@ -1,0 +1,41 @@
+@use '../sass-utils/all' as *;
+
+.button-container {
+  display: none;
+  @include query(lg) {
+    display: flex;
+    justify-content: end;
+  }
+}
+
+.button {
+  padding: 12px 30px;
+  border-radius: 2rem;
+  font-weight: var(--font-weight-bold);
+  transition: all 350ms;
+  box-shadow: 0px 7px 16px #fec7be;
+  cursor: pointer;
+
+  &__text {
+    color: var(--very-light-gray);
+  }
+
+  &--bright-red {
+    background-color: var(--bright-red);
+
+    &:hover {
+      background-color: lighten(hsl(12, 88%, 59%), 9%);
+    }
+  }
+
+  &--white {
+    background-color: #fff;
+    color: var(--bright-red);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+
+    &:hover {
+      background-color: #fff;
+      color: lighten(hsl(12, 88%, 59%), 20%);
+    }
+  }
+}

@@ -1,3 +1,24 @@
-header {
-    margin:0 0 5rem;
+@use '../sass-utils/all' as *;
+
+.header {
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  & .logo {
+    flex-basis: 20%;
+    padding-top: 0.5rem;
+
+    display: flex;
+    justify-content: start;
+  }
+
+  & .navbar {
+    flex-basis: 60%;
+  }
+
+  & .button-container {
+    flex-basis: 20%;
+  }
 }

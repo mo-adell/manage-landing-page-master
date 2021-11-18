@@ -1,0 +1,41 @@
+@use '../sass-utils/all' as *;
+
+.menu {
+  z-index: 1;
+  display: none;
+  position: absolute;
+  top: 5rem;
+  left: 0;
+  right: 0;
+  padding: 3rem;
+  margin: 0 var(--padding-layout-mobile);
+  border-radius: 5px;
+  background-color: var(--very-light-gray);
+
+  @include query(lg) {
+    display: none;
+  }
+
+  &.open {
+    display: block;
+    @include query(lg) {
+      display: none;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  &__item {
+    display: flex;
+    place-content: center;
+  }
+
+  &__link {
+    color: var(--dark-blue);
+    font-weight: var(--font-weight-bold);
+  }
+}
