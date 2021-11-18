@@ -1,0 +1,19 @@
+@use '../sass-utils/all' as *;
+
+.navbar {
+  display: none;
+
+  @include query(lg) {
+    display: flex;
+    justify-content: center;
+  }
+  &__list {
+    display: flex;
+    gap: 1rem;
+  }
+
+  &__link {
+    color: var(--dark-blue);
+    font-weight: var(--font-weight-bold);
+  }
+}

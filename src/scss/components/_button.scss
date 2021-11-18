@@ -1,0 +1,18 @@
+@use '../sass-utils/all' as *;
+
+.button-container {
+  display: none;
+  @include query(lg) {
+    display: flex;
+    justify-content: end;
+  }
+  .button {
+    padding: 1.2rem 2.5rem;
+    border-radius: 2rem;
+    color: var(--very-light-gray);
+
+    &--bright-red {
+      background-color: var(--bright-red);
+    }
+  }
+}

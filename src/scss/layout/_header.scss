@@ -1,0 +1,24 @@
+@use '../sass-utils/all' as *;
+
+.header {
+  padding: 2rem var(--padding-layout-mobile);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  & .logo {
+    flex-basis: 20%;
+    padding-top: 0.5rem;
+
+    display: flex;
+    justify-content: start;
+  }
+
+  & .navbar {
+    flex-basis: 60%;
+  }
+
+  & .button-container {
+    flex-basis: 20%;
+  }
+}
