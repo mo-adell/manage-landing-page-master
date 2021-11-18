@@ -1,2 +1,2 @@
-console.log("hola");
+const toggle=document.querySelector(".toggle"),toggleLine=document.querySelectorAll(".toggle__line"),menu=document.querySelector(".menu"),body=document.body;toggleLine.forEach((e=>{toggle.addEventListener("click",(o=>{e.classList.toggle("open"),menu.classList.toggle("open"),body.classList.toggle("open")}))}));
 //# sourceMappingURL=script.js.map
