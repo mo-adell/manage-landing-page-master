@@ -1,0 +1,35 @@
+@use "../sass-utils/all" as *;
+
+.section-2 {
+  width: 100%;
+  margin: 10rem 0 8rem;
+  @include flexbox(row);
+
+  &-block {
+    max-width: 50%;
+
+    &__heading {
+      margin-bottom: 2.2rem;
+    }
+
+    &__text {
+      max-width: 58%;
+    }
+  }
+
+  &-list { 
+    @include flexbox(column, center, center, 3.5rem);
+    max-width: 50%;
+
+    &__item {
+      @include flexbox(row, flex-start, flex-start);
+
+      h4 {
+        margin-bottom: 1.4rem;
+      }
+      p {
+        max-width: 92%;
+      }
+    }
+  }
+}

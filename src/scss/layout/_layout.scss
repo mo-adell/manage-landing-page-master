@@ -1,3 +1,6 @@
 body {
-  background-color: #fff;
+	display: grid;
+	grid-template-columns: 10% 1fr 10%;
+	grid-template-areas: ". main .";
 }
+
